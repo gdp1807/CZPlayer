@@ -17,6 +17,8 @@ def read_json(file):
 
 if not os.path.exists('data.json') or len(sys.argv) == 5:
     output_path = sys.argv[1]
+    if output_path[-1] != '/':
+        output_path = output_path + '/'
     input_file_path = sys.argv[2]
     sudo_pass = sys.argv[3]
     username = sys.argv[4]

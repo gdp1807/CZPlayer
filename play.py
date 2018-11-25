@@ -31,10 +31,11 @@ def read_json(file):
 if len(sys.argv) == 3 or not os.path.exists('player_data.json'):
     playlist = sys.argv[1]
     songs = sys.argv[2]
+    if songs[-1] != '/':
+        songs = songs + '/'
     write_json('player_data.json', playlist, songs)
 else:
     playlist, songs = read_json('player_data.json')
-    print(playlist, songs)
 
 file = open(playlist, 'r')
 song = file.readline()
