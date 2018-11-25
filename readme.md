@@ -1,16 +1,23 @@
-CZPlayer is an a song player and downloader for Ubuntu OS written in Python 3.x. It has been developed and tested on Ubuntu 18.04 OS.
+CZPlayer is a song player and downloader for Ubuntu OS written in Python 3.x. It has been developed and tested on Ubuntu 18.04 OS.
 
 Pre-requisites:
 1. `youtube-dl`
+
     Install `youtube-dl` by running the following two commands on the terminal,
+    
     `sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl`
+    
     `sudo chmod a+rx /usr/local/bin/youtube-dl`
 
 2. `playsound`
+
     Install `playsound` by running the following command on the terminal,
+    
     `sudo pip3 install playsound`
+    
     If you don't have `pip3` installed then install it by running the following
     command on the terminal,
+    
     `sudo apt-get -y install python3-pip`
 
 Usage:
@@ -36,7 +43,7 @@ For playing songs, you can try the following steps:
   `python3 play.py path_to_your_home_directory/Songs/playlist.txt path_to_your_home_directory/Songs/`
   ```
 The example song will be played. After performing the above, you will be able to listen
-to your plalist by simply writing,
+to your playlist by simply writing,
 ```
 `python3 play.py`
 ```
@@ -70,6 +77,7 @@ Long run plans:
 2. Pausing the songs.
 3. Skipping a song.
 
-Raise your issues to enjoy music via terminal.
+Create issues to enjoy music via terminal.
 
 Made with love by `Gagandeep Singh(singh.23@iitj.ac.in)`
+
