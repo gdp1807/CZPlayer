@@ -28,7 +28,7 @@ elif sys.argv[1] == "help":
     print("'python3 czplayer.py download your_sudo_password your_username' for downloading songs present in Downloads/songs.txt. Playlist will be automatically updated.")
     print("'python3 czplayer.py download your_sudo_password' if you have executed the above command at least once.")
     print("'python3 czplayer.py play random' for listening to the songs in the playlist random order.")
-    print("'python3 czplayer.py play custom [song_name_without_spaces, song_name_without_spaces, ..., song_name_without_spaces]'.")
+    print("'python3 czplayer.py play custom song_name_without_spaces song_name_without_spaces ... song_name_without_spaces'.")
     print("You can view the playlist by opening playlists/universal.txt.")
 
 else:
