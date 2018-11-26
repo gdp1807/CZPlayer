@@ -48,10 +48,9 @@ the above mentioned format.
 
 # Short run plans
 1. Allowing multiple playlists.
-2. Accepting custom order of songs for playling.
-3. Rectifying issues raised on github.
-4. Adding more documentation.
-5. Create a better `setup.py` file.
+2. Rectifying issues raised on github.
+3. Adding more documentation.
+4. Create a better `setup.py` file.
 
 # Long run plans
 1. Looping the playlists.
