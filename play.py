@@ -15,7 +15,7 @@ class Play:
         self.order = args[0]
         if self.order == "custom":
             try:
-                for song in args[1:]:
+                for song in args[1]:
                     self.playlist.append(song)
             except:
                 raise Exception("Invalid format. Please use 'czplayer help' to get usage information.")
