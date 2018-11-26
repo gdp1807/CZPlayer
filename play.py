@@ -1,4 +1,3 @@
-import vlc
 import sys
 import random
 from playsound import playsound
