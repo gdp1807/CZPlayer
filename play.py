@@ -1,48 +1,50 @@
 import sys
 import random
 from playsound import playsound
-from write_to_json import write_json
+from read_write import Read, Write
 import os
 import json
 
-def shuffle(l, u):
-    """
-    This method is used for shuffling the songs in the playlist.
-    """
-    order = []
-    for i in range(l, u+1):
-        num = random.randint(l, u)
-        while num in order:
-            num = random.randint(l, u)
-        order.append(num)
-    return order
+class Play:
+    def __init__(self):
+        self.order = ""
+        self.playlist = []
+        self.read = Read()
 
-def read_json(file):
-    """
-    This method is used for reading data from player_data.json
-    """
-    file_json = open(file, 'r')
-    json_decode = json.load(file_json)
-    playlist = json_decode["playlist"]
-    songs = json_decode["songs"]
-    return (playlist, songs)
+    def set_order(self, *args):
+        self.order = args[0]
+        if self.order == "custom":
+            print(args)
+            try:
+                for song in args[1]:
+                    self.playlist.append(song)
+            except:
+                raise Exception("Invalid format. Please use 'czplayer help' to get usage information.")
 
-if len(sys.argv) == 3 or not os.path.exists('player_data.json'):
-    playlist = sys.argv[1]
-    songs = sys.argv[2]
-    if songs[-1] != '/':
-        songs = songs + '/'
-    write_json('player_data.json', playlist, songs)
-else:
-    playlist, songs = read_json('player_data.json')
+    def generate(self):
+        def shuffle(l, u):
+            """
+            This method is used for shuffling the songs in the playlist.
+            """
+            order = []
+            for i in range(l, u+1):
+                num = random.randint(l, u)
+                while num in order:
+                    num = random.randint(l, u)
+                order.append(num)
+            return order
+        self.read.set_file('playlists/universal.txt')
+        self.playlist = self.read.read_playlist()
+        if self.order == "random":
+            rand_order = shuffle(0, len(self.playlist) - 1)
+            new_playlist = []
+            for i in rand_order:
+                new_playlist.append(self.playlist[i])
+            self.playlist = new_playlist
+        elif self.order != "custom":
+            raise Exception("Invalid type of playlist!Please use 'czplayer help' to get usage information.")
 
-file = open(playlist, 'r')
-song = file.readline()
-song_list = []
-while song != "":
-    song_list.append(song.rstrip('\n'))
-    song = file.readline()
-queue = shuffle(0, len(song_list) - 1)
-for index in queue:
-    print('Playing ' + song_list[index] + '...')
-    playsound(songs + song_list[index] + '.mp3')
+    def play(self):
+        for song in self.playlist:
+            print('Playing ' + song + '...')
+            playsound('Downloads/' + song +'.mp3')
