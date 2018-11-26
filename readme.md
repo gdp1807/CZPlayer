@@ -27,9 +27,9 @@ CZPlayer is a song player and downloader for Ubuntu OS written in Python 3.x. It
 
 Use `python3 czplayer.py help` to get information about usage.
 
-# Customizing `Downloads/ongs.txt`
+# Customizing `Downloads/songs.txt`
 
-The format of `Dpwnloads/songs.txt` is as follows,
+The format of `Downloads/songs.txt` is as follows,
 ```
 <song_name_without_spaces> <youtube_link_of_the_song>
 <song_name_without_spaces> <youtube_link_of_the_song>
