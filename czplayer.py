@@ -16,7 +16,7 @@ if sys.argv[1] == "download":
 elif sys.argv[1] == "play":
     player = Play()
     if len(sys.argv) == 4:
-        player.set_order(sys.argv[2], sys.argv[3])
+        player.set_order(sys.argv[2], sys.argv[3:])
     else:
         player.set_order("random")
     player.generate()
