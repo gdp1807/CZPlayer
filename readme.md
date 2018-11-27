@@ -51,11 +51,13 @@ the above mentioned format.
 2. Rectifying issues raised on github.
 3. Adding more documentation.
 4. Create a better `setup.py` file.
+5. Automatic installation of pre-requisites.
 
 # Long run plans
 1. Looping the playlists.
 2. Pausing the songs.
 3. Skipping a song.
+4. Making CZPlayer compatible on mac OS.
 
 Create issues to enjoy music via terminal.
 
