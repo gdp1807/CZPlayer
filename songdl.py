@@ -23,6 +23,8 @@ class Songs:
             self.input_file_path = args[1]
             self.sudo_pass = args[2]
             self.username = args[3]
+            if not os.path.exists('data/'):
+                os.makedirs('data')
             self.write.set_file('data/user_data.json')
             self.write.write_user_json(self.output_path, self.input_file_path, self.username)
         elif len(args) == 1:
