@@ -51,7 +51,7 @@ For example, if the song is `Treat You Better`, then `songs.txt` will be like,
 TreatYouBetter https://www.youtube.com/watch?v=lY2yjAdbvdQ
 ```
 To add more songs to your playlist just add more lines to the `songs.txt` in
-the above mentioned format.
+the above mentioned format. You can do that without sudo rights on gedit.
 
 # Short run plans
 1. Allowing multiple playlists.
