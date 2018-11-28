@@ -34,6 +34,13 @@ CZPlayer is a song player and downloader for Ubuntu OS written in Python 3.x. It
 
 Use `python3 czplayer.py help` to get information about usage.
 
+# Backingup
+1. Run, `sudo mkdir ~/Backup`
+2. Run, `sudo cp -r /usr/local/CZPlayer/Downloads /usr/local/CZPlayer_Backup/`
+3. Run, `sudo cp -r /usr/local/CZPlayer/playlists /usr/local/CZPlayer_Backup/`
+4. Run, `sudo cp -r /usr/local/CZPlayer/data /usr/local/CZPlayer_Backup/`
+This step is strictly recommended. If you will not backup your playlists after installation then it may lead to loss of Downloads, playlists and data on installing the updates. We will make the backingup process automatic in the upcoming updates. 
+
 # Customizing `Downloads/songs.txt`
 
 The format of `Downloads/songs.txt` is as follows,
@@ -59,6 +66,7 @@ the above mentioned format. You can do that without sudo rights on gedit.
 3. Adding more documentation.
 4. Making it available via `apt-get`.
 5. Automatic installation of pre-requisites.
+6. Automatic backing up of songs.
 
 # Long run plans
 1. Looping the playlists.
