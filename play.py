@@ -14,7 +14,6 @@ class Play:
     def set_order(self, *args):
         self.order = args[0]
         if self.order == "custom":
-            print(args)
             try:
                 for song in args[1]:
                     self.playlist.append(song)
@@ -34,8 +33,8 @@ class Play:
                 order.append(num)
             return order
         self.read.set_file('playlists/universal.txt')
-        self.playlist = self.read.read_playlist()
         if self.order == "random":
+            self.playlist = self.read.read_playlist()
             rand_order = shuffle(0, len(self.playlist) - 1)
             new_playlist = []
             for i in rand_order:
