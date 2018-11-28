@@ -32,7 +32,7 @@ CZPlayer is a song player and downloader for Ubuntu OS written in Python 3.x. It
 
 # Usage
 
-Use `python3 czplayer.py help` to get information about usage.
+Use `czplayer help` to get information about usage.
 
 # Backup
 1. Run, `sudo mkdir /usr/local/CZPlayer_Backup/`
