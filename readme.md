@@ -39,6 +39,7 @@ Use `czplayer help` to get information about usage.
 2. Run, `sudo cp -r /usr/local/CZPlayer/Downloads /usr/local/CZPlayer_Backup/`
 3. Run, `sudo cp -r /usr/local/CZPlayer/playlists /usr/local/CZPlayer_Backup/`
 4. Run, `sudo cp -r /usr/local/CZPlayer/data /usr/local/CZPlayer_Backup/`
+
 This step is strictly recommended. If you will not backup your playlists after installation then it may lead to loss of Downloads, playlists and data on installing the updates. We will make the backingup process automatic in the upcoming updates. 
 
 # Customizing `Downloads/songs.txt`
