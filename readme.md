@@ -16,12 +16,19 @@ CZPlayer is a song player and downloader for Ubuntu OS written in Python 3.x. It
 
     Install `playsound` by running the following command on the terminal,
 
-    `sudo pip3 install playsound`
+    `sudo pip install playsound`
 
     If you don't have `pip3` installed then install it by running the following
     command on the terminal,
 
-    `sudo apt-get -y install python3-pip`
+    `sudo apt-get -y install python-pip`
+
+# Installation
+
+1. Run, `sudo wget https://github.com/gdp1807/CZPlayer/archive/master.zip -O /usr/local/CZPlayer_Zip`
+2. Run, `sudo unzip /usr/local/CZPlayer_Zip`
+3. Run, `sudo mv /usr/local/CZPlayer-master /usr/local/CZPlayer`
+4. Run, `python3 /usr/local/CZPlayer/setup.py your_sudo_password your_ubuntu_username`
 
 # Usage
 
