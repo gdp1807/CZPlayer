@@ -57,7 +57,7 @@ the above mentioned format. You can do that without sudo rights on gedit.
 1. Allowing multiple playlists.
 2. Rectifying issues raised on github.
 3. Adding more documentation.
-4. Create a better `setup.py` file.
+4. Making it available via `apt-get`.
 5. Automatic installation of pre-requisites.
 
 # Long run plans
