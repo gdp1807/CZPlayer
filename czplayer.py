@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-sys.path.append('/usr/local/CZPlayer_Dev')
+sys.path.append('/usr/local/CZPlayer')
 from songdl import Songs
 from play import Play
 if sys.argv[1] == "download":
