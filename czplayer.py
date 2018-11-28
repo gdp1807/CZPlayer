@@ -25,11 +25,11 @@ elif sys.argv[1] == "play":
 
 elif sys.argv[1] == "help":
     print("Use CZPlayer by executing one of the following commands - ")
-    print("'python3 czplayer.py help' for usage information.")
-    print("'python3 czplayer.py download your_sudo_password your_username' for downloading songs present in Downloads/songs.txt. Playlist will be automatically updated.")
-    print("'python3 czplayer.py download your_sudo_password' if you have executed the above command at least once.")
-    print("'python3 czplayer.py play random' for listening to the songs in the playlist random order.")
-    print("'python3 czplayer.py play custom song_name_without_spaces song_name_without_spaces ... song_name_without_spaces'.")
+    print("'czplayer help' for usage information.")
+    print("'czplayer download your_sudo_password your_username' for downloading songs present in Downloads/songs.txt. Playlist will be automatically updated.")
+    print("'czplayer download your_sudo_password' if you have executed the above command at least once.")
+    print("'czplayer play random' for listening to the songs in the playlist random order.")
+    print("'czplayer play custom song_name_without_spaces song_name_without_spaces ... song_name_without_spaces'.")
     print("You can view the playlist by opening playlists/universal.txt.")
 
 else:
