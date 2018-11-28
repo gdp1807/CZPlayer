@@ -4,7 +4,7 @@ from playsound import playsound
 from read_write import Read, Write
 import os
 import json
-import_path = 'usr/local/CZPlayer_Dev/'
+import_path = '/usr/local/CZPlayer_Dev/'
 class Play:
     def __init__(self):
         self.order = ""
