@@ -4,7 +4,7 @@ from playsound import playsound
 from read_write import Read, Write
 import os
 import json
-
+import_path = 'usr/local/CZPlayer_Dev/'
 class Play:
     def __init__(self):
         self.order = ""
@@ -32,7 +32,7 @@ class Play:
                     num = random.randint(l, u)
                 order.append(num)
             return order
-        self.read.set_file('playlists/universal.txt')
+        self.read.set_file(import_path + 'playlists/universal.txt')
         if self.order == "random":
             self.playlist = self.read.read_playlist()
             rand_order = shuffle(0, len(self.playlist) - 1)
@@ -46,4 +46,4 @@ class Play:
     def play(self):
         for song in self.playlist:
             print('Playing ' + song + '...')
-            playsound('Downloads/' + song +'.mp3')
+            playsound(import_path + 'Downloads/' + song +'.mp3')
