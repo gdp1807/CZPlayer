@@ -3,7 +3,7 @@ import subprocess
 import json
 import os
 from read_write import Read, Write
-
+import_path = '/usr/local/CZPlayer/'
 class Songs:
     def __init__(self):
         self.download_dict = {}
